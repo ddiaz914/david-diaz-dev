@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Amatic_SC';
+	src: url('../fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
