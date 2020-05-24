@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 @import './fonts.css';
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
