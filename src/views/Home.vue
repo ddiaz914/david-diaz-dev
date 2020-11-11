@@ -13,6 +13,7 @@
         class="z-10"
         width="192"
         height="498"
+        muted="muted"
       >
         <source
           src="../assets/videos/waving.mp4"
@@ -28,6 +29,7 @@
         class="z-10"
         width="192"
         height="498"
+        muted="muted"
       >
         <source
           src="../assets/videos/blink.mp4"
