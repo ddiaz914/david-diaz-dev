@@ -3,19 +3,58 @@
 @tailwind utilities;
 @import './fonts.css';
 
+.stationary {
+  z-index: -1;
+  position: absolute;
+  height: 500px;
+  width: 182px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-image: url('../images/stationary.png');
+  /*
+    Add this to preload the images used in the animations
+    to get rid of the flashing during the transitin from
+    the waving to blinking animations
+  */
+  content: url('../images/blinking.png');
+}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+.blink {
+  height: 500px;
+  width: 182px;
+  background-color: white;
+  background-position: 0px 0px;
+  background-image: url('../images/blinking.png');
+  animation: blink 5s steps(3) infinite;
+}
+
+.wave {
+  height: 500px;
+  width: 182px;
+  background-color: white;
+  background-position: 0px 0px;
+  background-image: url('../images/waving.png');
+  animation: wave 1s steps(15) forwards;
+  animation-delay: 2s;
+}
+
+@keyframes blink {
+  0% {
+    background-position: 0px 0px;
   }
 
-  to {
-    opacity: 1;
+  10%, 100% {
+    background-position: -546px 0px;
   }
 }
 
-.fadeIn {
-	animation-name: fadeIn;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+@keyframes wave {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: -2730px 0px;
+  }
 }
